@@ -1,0 +1,32 @@
+version: 2.0
+commands:
+  - cmd: import # possible import from step1 pipeline
+    array:
+      - link: "https://bi.ua/rus/kukli/bolshie-kukli"
+        name: "bolshie-kukli"
+        sublinks:
+          - name: "Кукла Frozen 2 Путешествие Эльзы (207054)"
+            innerLink: "/rus/product/kukla-frozen-2-puteshestvie-elzy-207054.html"
+          - name: "Кукла Frozen 2 Волшебная Эльза с эффектами (207474)"
+            innerLink: "/rus/product/kukla-frozen-2-volshebnaya-elza-s-effektami-207474.html"
+      - link: "https://bi.ua/rus/konstruktori/konstruktori-lego"
+        name: "lego"
+        sublinks:
+          - name: "Конструктор LEGO Star Wars Шаттл Кайло Рена (75256)"
+            innerLink: "/rus/product/konstruktor-lego-star-wars-shattl-kaylo-rena-75256.html"
+          - name: "Конструктор LEGO Hidden side Добро пожаловать в Hidden Side (70427)"
+            innerLink: "/rus/product/konstruktor-lego-hidden-side-dobro-pozhalovat-v-hidden-side-70427.html"
+  - cmd: loop
+    context: sublinks
+    commands:
+      - cmd: url
+        lineKey: innerLink
+      - cmd: gettext
+        key: price
+        selector: ".costIco"
+      - cmd: gettext
+        key: brand
+        selector: "a.clink[itemprop='brand']"
+
+
+# result data in loop.out.json

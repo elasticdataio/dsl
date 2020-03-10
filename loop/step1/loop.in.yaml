@@ -1,0 +1,26 @@
+version: 2.0
+commands:
+  - cmd: import
+    array:
+      - link: "https://bi.ua/rus/kukli/bolshie-kukli"
+        name: "bolshie-kukli"
+      - link: "https://bi.ua/rus/konstruktori/konstruktori-lego"
+        name: "lego"
+  - cmd: loop
+    context: root # additional property, 'root' is a default value of the context
+    commands:
+      - cmd: url
+        lineKey: link
+      - cmd: loop
+        context: sublinks
+        max: 2
+        commands:
+          - cmd: gettext
+            key: name
+            selector: ".slide$i .slide5 .itemDes"
+          - cmd: gettext
+            key: innerlink
+            attribute: href
+            selector: ".slide$i .slide5 .goodsItemLink"
+
+# result data in loop.out.json

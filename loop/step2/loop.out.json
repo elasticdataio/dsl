@@ -1,0 +1,38 @@
+[
+	{
+		"link": "https://bi.ua/rus/kukli/bolshie-kukli",
+		"name": "bolshie-kukli",
+		"sublinks": [
+			{
+				"name": "Кукла Frozen 2 Путешествие Эльзы (207054)",
+				"innerLink": "/rus/product/kukla-frozen-2-puteshestvie-elzy-207054.html",
+				"price": "800 грн",
+				"brand": "Jakks Pacific"
+			},
+			{
+				"name": "Кукла Frozen 2 Волшебная Эльза с эффектами (207474)",
+				"innerLink": "/rus/product/kukla-frozen-2-volshebnaya-elza-s-effektami-207474.html",
+				"price": "699 грн",
+				"brand": "Jakks Pacific"
+			}
+		]
+	},
+	{
+		"link": "https://bi.ua/rus/konstruktori/konstruktori-lego",
+		"name": "lego",
+		"sublinks": [
+			{
+				"name": "Конструктор LEGO Star Wars Шаттл Кайло Рена (75256)",
+				"innerLink": "/rus/product/konstruktor-lego-star-wars-shattl-kaylo-rena-75256.html",
+				"price": "1500 грн",
+				"brand": "LEGO"
+			},
+			{
+				"name": "Конструктор LEGO Hidden side Добро пожаловать в Hidden Side (70427)",
+				"innerLink": "/rus/product/konstruktor-lego-hidden-side-dobro-pozhalovat-v-hidden-side-70427.html",
+				"price": "480 грн",
+				"brand": "LEGO"
+			}
+		]
+	}
+]
