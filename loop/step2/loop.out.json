@@ -7,13 +7,29 @@
 				"name": "Кукла Frozen 2 Путешествие Эльзы (207054)",
 				"innerLink": "/rus/product/kukla-frozen-2-puteshestvie-elzy-207054.html",
 				"price": "800 грн",
-				"brand": "Jakks Pacific"
+				"brand": "Jakks Pacific",
+				"images": [
+					{
+						"img": "/uploaded-images/products/size_400/549302_1.jpg"
+					},
+					{
+						"img": "/uploaded-images/products/size_400/549302_2.jpg"
+					}
+				]
 			},
 			{
 				"name": "Кукла Frozen 2 Волшебная Эльза с эффектами (207474)",
 				"innerLink": "/rus/product/kukla-frozen-2-volshebnaya-elza-s-effektami-207474.html",
 				"price": "699 грн",
-				"brand": "Jakks Pacific"
+				"brand": "Jakks Pacific",
+				"images": [
+					{
+						"img": "/uploaded-images/products/size_400/2249302_1.jpg"
+					},
+					{
+						"img": "/uploaded-images/products/size_400/1149302_2.jpg"
+					}
+				]
 			}
 		]
 	},
@@ -25,13 +41,29 @@
 				"name": "Конструктор LEGO Star Wars Шаттл Кайло Рена (75256)",
 				"innerLink": "/rus/product/konstruktor-lego-star-wars-shattl-kaylo-rena-75256.html",
 				"price": "1500 грн",
-				"brand": "LEGO"
+				"brand": "LEGO",
+				"images": [
+					{
+						"img": "/uploaded-images/products/size_400/149302_1.jpg"
+					},
+					{
+						"img": "/uploaded-images/products/size_400/249302_2.jpg"
+					}
+				]
 			},
 			{
 				"name": "Конструктор LEGO Hidden side Добро пожаловать в Hidden Side (70427)",
 				"innerLink": "/rus/product/konstruktor-lego-hidden-side-dobro-pozhalovat-v-hidden-side-70427.html",
 				"price": "480 грн",
-				"brand": "LEGO"
+				"brand": "LEGO",
+				"images": [
+					{
+						"img": "/uploaded-images/products/size_400/349302_1.jpg"
+					},
+					{
+						"img": "/uploaded-images/products/size_400/449302_2.jpg"
+					}
+				]
 			}
 		]
 	}

@@ -27,6 +27,13 @@ commands:
       - cmd: gettext
         key: brand
         selector: "a.clink[itemprop='brand']"
+      - cmd: loop
+        context: images
+        commands:
+          - cmd: getText
+            key: img
+            selector: ".prodSlNav img$i"
+            attribute: "data-src"
 
 
 # result data in loop.out.json
