@@ -1,0 +1,32 @@
+version: "2.0"
+commands:
+  - cmd: openurl
+    link: "https://www.nll.com/stats/all-player-stats/"
+  - cmd: js
+    script: "document.querySelector('.table-overflow tr').setAttribute('header', true)"
+  # select players name
+  - cmd: loop
+    commands:
+      - cmd: gettext
+        selector: ".table-overflow tr:not([header=true])$i td:first-child"
+        key: player
+  # search player account in https://www.instagram.com/
+  - cmd: loop
+    commands:
+      - cmd: openurl
+        link: "https://www.instagram.com/"
+      - cmd: puttext
+        selector: "input[placeholder='Поиск']"
+        text: "{line.player}"
+      - cmd: condition
+        condition:
+          cmd: waitelement
+          selector: ".drKGC" # появление выпадающего списка с людьми
+        truecommands:
+          - cmd: click
+            selector: ".drKGC a"
+          - cmd: getText
+            selector: ".-nal3"
+            key: "subscribers-count"
+          - cmd: geturl
+            key: "instagram-player-link"
