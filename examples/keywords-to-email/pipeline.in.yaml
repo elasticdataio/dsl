@@ -1,0 +1,27 @@
+vrscion: "2.0"
+commands:
+  - cmd: import
+    array:
+      - keyword: "пицца киев"
+      - keyword: "пицца кривий ріг"
+  - cmd: loop
+    commnads:
+      - cmd: openurl
+        link: "http://google.com.ua?q={line.keyword}"
+      - cmd: loop
+        context: sites
+        commands:
+          - cmd: gettext
+            key: link
+            selector: ".srg div.g$i div.r a"
+            attribute: href
+          - cmd: click
+            selector: "td.YyVfkd + td a"
+      - cmd: loop
+        context: sites
+        commands:
+          - cmd: openurl
+            link: "{line.site-link}"
+          - cmd: gettext
+            key: content
+            selector: "body"
