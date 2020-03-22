@@ -21,7 +21,12 @@ commands:
         context: sites
         commands:
           - cmd: openurl
-            link: "{line.site-link}"
+            link: "{line.link}"
           - cmd: gettext
             key: content
             selector: "body"
+datarules:
+  - cmd: extract
+    fromkey: 'sites.content'
+    tokey: 'sites.email'
+    regex: 'email regex...'

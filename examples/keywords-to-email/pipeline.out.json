@@ -4,47 +4,58 @@
 		"sites": [
 			{
 				"link": "https://dominos.ua/ru/kyiv/Pizza/",
-				"content": "..."
+				"content": "...",
+				"email": "..."
 			},
 			{
 				"link": "https://pizzahouse.ua/products/italian/pizza/",
-				"content": "..."
+				"content": "...",
+				"email": "..."
 			},
 			{
 				"link": "https://mafia.ua/kiev/menu-dostavki/pizza",
-				"content": "..."
+				"content": "...",
+				"email": "..."
 			},
 			{
 				"link": "https://mistercat.com.ua/pizza",
-				"content": "..."
+				"content": "...",
+				"email": "..."
 			},
 			{
 				"link": "https://pizza33.ua/",
-				"content": "..."
+				"content": "...",
+				"email": "..."
 			},
 			{
 				"link": "https://www.pizzaking.ua/catalog/1-pizza/",
-				"content": "..."
+				"content": "...",
+				"email": "..."
 			},
 			{
 				"link": "https://www.tarantino-family.com/delivery/papa-dzhon/pitstsa/",
-				"content": "..."
+				"content": "...",
+				"email": "..."
 			},
 			{
 				"link": "https://mamamia.ua/pizza",
-				"content": "..."
+				"content": "...",
+				"email": "..."
 			},
 			{
 				"link": "https://mamamia.ua/",
-				"content": "..."
+				"content": "...",
+				"email": "..."
 			},
 			{
 				"link": "https://adriano.com.ua/",
-				"content": "..."
+				"content": "...",
+				"email": "..."
 			},
 			{
 				"link": "https://www.miopizza.ua/",
-				"content": "..."
+				"content": "...",
+				"email": "..."
 			}
 		]
 	},
@@ -53,47 +64,58 @@
 		"sites": [
 			{
 				"link": "http://celentano-pizza.com.ua/",
-				"content": "..."
+				"content": "...",
+				"email": "..."
 			},
 			{
 				"link": "https://krivoy-rog.mixfood.ua/grand-picca",
-				"content": "..."
+				"content": "...",
+				"email": "..."
 			},
 			{
 				"link": "https://dvagusya.dp.ua",
-				"content": "..."
+				"content": "...",
+				"email": "..."
 			},
 			{
 				"link": "https://krivoy-rog.eda.ua/picca",
-				"content": "..."
+				"content": "...",
+				"email": "..."
 			},
 			{
 				"link": "http://fiesta.kr.ua/",
-				"content": "..."
+				"content": "...",
+				"email": "..."
 			},
 			{
 				"link": "https://www.0564.ua/dosug/52-454/restorany-kafe-piccerii-susi/piccerii",
-				"content": "..."
+				"content": "...",
+				"email": "..."
 			},
 			{
 				"link": "https://veteranopizza.com/city/kryvyi-rih",
-				"content": "..."
+				"content": "...",
+				"email": "..."
 			},
 			{
 				"link": "https://veteranopizza.com/",
-				"content": "..."
+				"content": "...",
+				"email": "..."
 			},
 			{
 				"link": "https://campania-cafe.business.site/",
-				"content": "..."
+				"content": "...",
+				"email": "..."
 			},
 			{
 				"link": "https://tomato.ua/kryvyirih/restaurants/pizzacelentanohaharina",
-				"content": "..."
+				"content": "...",
+				"email": "..."
 			},
 			{
 				"link": "http://egoisty.com/restaurant-location/celentano/kriviy-rig-vul-musorgskogo-20-uk",
-				"content": "..."
+				"content": "...",
+				"email": "..."
 			}
 		]
 	}
