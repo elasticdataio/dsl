@@ -30,3 +30,6 @@ datarules:
     fromkey: 'sites.content'
     tokey: 'sites.email'
     regex: 'email regex...'
+  - cmd: unique
+    fromkey: 'sites.email'
+    tokey: 'sites.email'
