@@ -8,13 +8,13 @@ commands:
   - cmd: loop
     commnads:
       - cmd: openurl
-        link: "http://google.com.ua?q={line.keyword}"
+        link: "http://google.com.ua?q={$line.keyword}"
       - cmd: loop
         context: gsites
         commands:
           - cmd: gettext
             key: link
-            selector: ".srg div.g$i div.r a"
+            selector: ".srg div.g{$i} div.r a"
             attribute: href
           - cmd: click
             selector: "td.YyVfkd + td a"
@@ -22,7 +22,7 @@ commands:
         context: gsites
         commands:
           - cmd: openurl
-            link: "{line.link}"
+            link: "{$line.link}"
           - cmd: gettext
             key: content
             selector: "body"
@@ -30,13 +30,13 @@ commands:
   - cmd: loop
     commnads:
       - cmd: openurl
-        link: "https://yandex.ua/search/?text={line.keyword}"
+        link: "https://yandex.ua/search/?text={$line.keyword}"
       - cmd: loop
         context: ysites
         commands:
           - cmd: gettext
             key: link
-            selector: "#search-result li.serp-item$i a.link"
+            selector: "#search-result li.serp-item{$i} a.link"
             attribute: href
           - cmd: click
             selector: "div.pager__items span + a"
@@ -44,7 +44,7 @@ commands:
         context: ysites
         commands:
           - cmd: openurl
-            link: "{line.link}"
+            link: "{$line.link}"
           - cmd: gettext
             key: content
             selector: "body"

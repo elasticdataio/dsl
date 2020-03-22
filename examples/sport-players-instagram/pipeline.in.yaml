@@ -17,7 +17,7 @@ commands:
         link: "https://www.instagram.com/"
       - cmd: puttext
         selector: "input[placeholder='Поиск']"
-        text: "{line.player}"
+        text: "{$line.player}"
       - cmd: condition
         condition:
           cmd: waitelement
