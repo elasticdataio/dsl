@@ -4,12 +4,13 @@ commands:
     array:
       - keyword: "пицца киев"
       - keyword: "пицца кривий ріг"
+  # get from google
   - cmd: loop
     commnads:
       - cmd: openurl
         link: "http://google.com.ua?q={line.keyword}"
       - cmd: loop
-        context: sites
+        context: gsites
         commands:
           - cmd: gettext
             key: link
@@ -18,7 +19,29 @@ commands:
           - cmd: click
             selector: "td.YyVfkd + td a"
       - cmd: loop
-        context: sites
+        context: gsites
+        commands:
+          - cmd: openurl
+            link: "{line.link}"
+          - cmd: gettext
+            key: content
+            selector: "body"
+  # get from yandex
+  - cmd: loop
+    commnads:
+      - cmd: openurl
+        link: "https://yandex.ua/search/?text={line.keyword}"
+      - cmd: loop
+        context: ysites
+        commands:
+          - cmd: gettext
+            key: link
+            selector: "#search-result li.serp-item$i a.link"
+            attribute: href
+          - cmd: click
+            selector: "div.pager__items span + a"
+      - cmd: loop
+        context: ysites
         commands:
           - cmd: openurl
             link: "{line.link}"
@@ -27,9 +50,16 @@ commands:
             selector: "body"
 datarules:
   - cmd: extract
-    fromkey: 'sites.content'
-    tokey: 'sites.email'
+    fromkey: 'gsites.content'
+    tokey: 'gsites.email'
+    regex: 'email regex...'
+  - cmd: extract
+    fromkey: 'ysites.content'
+    tokey: 'ysites.email'
     regex: 'email regex...'
   - cmd: unique
-    fromkey: 'sites.email'
+    fromkey: 'gsites.email'
     tokey: 'sites.email'
+  - cmd: unique
+    fromkey: 'ysites.email'
+    tokey: 'ysites.email'

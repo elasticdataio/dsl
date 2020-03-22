@@ -1,7 +1,64 @@
 [
 	{
 		"keyword": "пицца киев",
-		"sites": [
+		"gsites": [
+			{
+				"link": "https://dominos.ua/ru/kyiv/Pizza/",
+				"content": "...",
+				"email": "..."
+			},
+			{
+				"link": "https://pizzahouse.ua/products/italian/pizza/",
+				"content": "...",
+				"email": "..."
+			},
+			{
+				"link": "https://mafia.ua/kiev/menu-dostavki/pizza",
+				"content": "...",
+				"email": "..."
+			},
+			{
+				"link": "https://mistercat.com.ua/pizza",
+				"content": "...",
+				"email": "..."
+			},
+			{
+				"link": "https://pizza33.ua/",
+				"content": "...",
+				"email": "..."
+			},
+			{
+				"link": "https://www.pizzaking.ua/catalog/1-pizza/",
+				"content": "...",
+				"email": "..."
+			},
+			{
+				"link": "https://www.tarantino-family.com/delivery/papa-dzhon/pitstsa/",
+				"content": "...",
+				"email": "..."
+			},
+			{
+				"link": "https://mamamia.ua/pizza",
+				"content": "...",
+				"email": "..."
+			},
+			{
+				"link": "https://mamamia.ua/",
+				"content": "...",
+				"email": "..."
+			},
+			{
+				"link": "https://adriano.com.ua/",
+				"content": "...",
+				"email": "..."
+			},
+			{
+				"link": "https://www.miopizza.ua/",
+				"content": "...",
+				"email": "..."
+			}
+		],
+		"ysites": [
 			{
 				"link": "https://dominos.ua/ru/kyiv/Pizza/",
 				"content": "...",
@@ -61,7 +118,64 @@
 	},
 	{
 		"keyword": "пицца кривий ріг",
-		"sites": [
+		"gsites": [
+			{
+				"link": "http://celentano-pizza.com.ua/",
+				"content": "...",
+				"email": "..."
+			},
+			{
+				"link": "https://krivoy-rog.mixfood.ua/grand-picca",
+				"content": "...",
+				"email": "..."
+			},
+			{
+				"link": "https://dvagusya.dp.ua",
+				"content": "...",
+				"email": "..."
+			},
+			{
+				"link": "https://krivoy-rog.eda.ua/picca",
+				"content": "...",
+				"email": "..."
+			},
+			{
+				"link": "http://fiesta.kr.ua/",
+				"content": "...",
+				"email": "..."
+			},
+			{
+				"link": "https://www.0564.ua/dosug/52-454/restorany-kafe-piccerii-susi/piccerii",
+				"content": "...",
+				"email": "..."
+			},
+			{
+				"link": "https://veteranopizza.com/city/kryvyi-rih",
+				"content": "...",
+				"email": "..."
+			},
+			{
+				"link": "https://veteranopizza.com/",
+				"content": "...",
+				"email": "..."
+			},
+			{
+				"link": "https://campania-cafe.business.site/",
+				"content": "...",
+				"email": "..."
+			},
+			{
+				"link": "https://tomato.ua/kryvyirih/restaurants/pizzacelentanohaharina",
+				"content": "...",
+				"email": "..."
+			},
+			{
+				"link": "http://egoisty.com/restaurant-location/celentano/kriviy-rig-vul-musorgskogo-20-uk",
+				"content": "...",
+				"email": "..."
+			}
+		],
+		"ysites": [
 			{
 				"link": "http://celentano-pizza.com.ua/",
 				"content": "...",
