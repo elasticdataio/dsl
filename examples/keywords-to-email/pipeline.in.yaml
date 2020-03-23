@@ -10,12 +10,14 @@ commands:
       - cmd: openurl
         link: "http://google.com.ua?q={$line.keyword}"
       - cmd: loop
-        context: gsites
         commands:
-          - cmd: gettext
-            key: link
-            selector: ".srg div.g{$i} div.r a"
-            attribute: href
+          - cmd: loop
+            context: gsites
+            commands:
+              - cmd: gettext
+                key: link
+                selector: ".srg div.g{$i} div.r a"
+                attribute: href
           - cmd: click
             selector: "td.YyVfkd + td a"
       - cmd: loop
